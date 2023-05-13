@@ -20,7 +20,10 @@ public class UserService {
         User user2 = new User(9546, "Smith", "4623642828", "5439854674", 41, "smithkn", "smith619",
                 List.of(new AccountDetails("Smith ken", "8272389200", "SAVING")));
 
-        return Stream.of(user1, user2).collect(Collectors.toList());
+        User user3 = new User(10258, "Togrul", "74368455584", "503915332", 25, "togrul", "password",
+                List.of(new AccountDetails("Togrul", "52230051514588551020", "SAVING")));
+
+        return Stream.of(user1, user2, user3).collect(Collectors.toList());
     }
 
     public User getUser(int id) {
