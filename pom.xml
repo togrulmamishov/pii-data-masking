@@ -50,6 +50,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>pii-data-masking</finalName>
     </build>
 
 </project>
